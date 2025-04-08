@@ -4,15 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Departments</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(211, 228, 245);
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        h1 {
+            background-color: rgb(28, 33, 59);
+            color: rgb(211, 228, 245);
+            padding: 10px 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        ul {
+            margin-top: 30px;
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: rgb(34, 52, 69);
+            box-shadow: 0px 0px 5px rgb(0, 0, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: rgb(211, 228, 245);
+            margin-top: 30px;
+        }
+
+        a:hover {
+            background-color: rgb(74, 105, 134);
+        }
+    </style>
 </head>
 <body>
-    <h1>Departments</h1>
-    <ul>
-        <li>Computer Science and Engineering</li>
-        <li>Electronics and Communication Engineering</li>
-        <li>Mechanical Engineering</li>
-        <li>Electrical Engineering</li>
-    </ul>
-    <a href="index.html">Go Back to Home</a>
+    <div class="container">
+        <h1>Departments</h1>
+        <ul>
+            <li>Computer Science & Engineering</li>
+            <li>Electronics Engineering</li>
+            <li>Mechanical Engineering</li>
+            <li>Information Technology</li>
+            <li>Civil Engineering</li>
+        </ul>
+        <a href="college-website.html">Back to Home</a>
+    </div>
 </body>
 </html>
