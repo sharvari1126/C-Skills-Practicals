@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Time Table CSE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: rgb(217, 194, 171);
+        }
+        img {
+            height: 60px;
+            width: auto;
+        }
+        h1 {
+            background-color: rgb(34, 52, 69);
+            color: rgb(245, 237, 223);
+            width: 100%;
+            padding: 10px 20px;
+            text-align: center;
+            margin-top: 100px;
+        }
+        h2 {
+            background-color: rgb(153, 174, 194);
+            padding: 10px 30px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgb(50, 50, 50);
+        }
+        h3 {
+            text-decoration: underline;
+        }
+        .dcn {
+            background-color: rgb(193, 209, 227);
+        }
+        .os {
+            background-color: rgb(153, 174, 194);
+        }
+        .alp {
+            background-color: rgb(245, 222, 218);
+        }
+        .toc {
+            background-color: rgb(247, 237, 223);
+        }
+        .soft {
+            background-color: rgb(213, 209, 224);
+        }
+        .evs {
+            background-color: rgb(222, 240, 218);
+        }
+        .ai {
+            background-color: rgb(168, 160, 172);
+        }
+        .day {
+            background-color: rgb(224, 215, 206);
+        }
+        .c-skill {
+            background-color: rgb(178, 191, 181);
+        }
+        footer {
+            width: 100%;
+            background-color: rgb(28, 33, 59);
+            color: rgb(211, 228, 245);
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Shri Sant Gajanan Maharaj College of Engineering</h1>
+        <img src="ssgmce.png">
+        <h2>Department of Computer Science and Engineering</h2>
+        <h3>Class Time Table - 2R</h3>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>11:00 AM - 12:00PM</th>
+                <th>12:00 PM - 1:00 PM</th>
+                <th>1:00 PM - 1:15 PM</th>
+                <th>1:15 PM - 2:15 PM</th>
+                <th>2:15 PM - 3:15 PM</th>
+                <th>3:15 PM - 4:15 PM</th>
+            </tr>
+            <tr>
+                <td class="day">Monday</td>
+                <td class="dcn">DCN</td>
+                <td class="os">OS</td>
+                <td class="alp">M&ALP</td>
+                <td rowspan="5" class="break">BREAK</td>
+                <td class="ai">AI</td>
+                <td class="c-skill">C Skills</td>
+            </tr>
+            <tr>
+                <td class="day">Tuesday</td>
+                <td class="alp">M&ALP</td>
+                <td class="toc">TOC</td>
+                <td class="evs">ENVS</td>
+                <td class="dcn">DCN</td>
+                <td class="soft">Soft Skills</td>
+            </tr>
+            <tr>
+                <td class="day">Wednesday</td>
+                <td class="ai">AI</td>
+                <td class="os">OS</td>
+                <td class="dcn">DCN</td>
+                <td class="c-skill">C Skills</td>
+                <td class="alp">M&ALP</td>
+            </tr>
+            <tr>
+                <td class="day">Thursday</td>
+                <td class="os">OS</td>
+                <td class="dcn">DCN</td>
+                <td class="ai">AI</td>
+                <td class="alp">M&ALP</td>
+                <td class="evs">ENVS</td>
+            </tr>
+            <tr>
+                <td class="day">Friday</td>
+                <td class="toc">TOC</td>
+                <td class="soft">Soft skills</td>
+                <td class="os">OS</td>
+                <td class="ai">AI</td>
+                <td class="dcn">DCN</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        Sharvari Bhujade <br>
+        Roll No. 25
+    </footer>
+</body>
+</html>

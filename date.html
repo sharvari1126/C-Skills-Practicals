@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Today's Date</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fef9f4, #fdf2e9);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h2 {
+      font-size: 2.2em;
+      color: #6e3f26;
+      margin-bottom: 30px;
+    }
+
+    #date {
+      font-size: 1.5em;
+      color: #fefaf7;
+      background-color: #4b2c20;
+      padding: 20px 35px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      border: 1px solid #e3c8b1;
+      transition: all 0.3s ease;
+    }
+
+    #date:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+    footer {
+                width: 100%;
+                background-color: #4b2c20;
+                color: rgb(211, 228, 245);
+                text-align: center;
+                padding: 10px 0;
+                font-size: 14px;
+            }
+          
+            .container {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+  <h2>Today's Date</h2>
+  <div id="date"></div>
+  </div>
+  <footer>
+    Sharvari Bhujade <br>
+    Roll No. 25
+</footer>
+
+  <script>
+    function showDate() {
+      const today = new Date();
+      const formattedDate = today.toLocaleDateString(undefined, {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+      document.getElementById("date").textContent = "🗓️ " + formattedDate;
+    }
+
+    showDate();
+  </script>
+
+</body>
+</html>

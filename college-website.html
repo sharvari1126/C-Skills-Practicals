@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>College Website</title>
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(211, 228, 245);   
+            }
+
+            .container {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+
+            h1 {
+                background-color: rgb(28, 33, 59);
+                color : rgb(211, 228, 245); 
+                padding : 10px 20px;
+                width : 100%;
+                text-align: center;
+            }
+
+            img {
+                height : auto;
+                width: 80px;
+                margin :0;
+                align-self: center;
+            }
+
+            p {
+                text-align: center;
+                margin :1px;
+                margin-bottom: 10px;
+            }
+
+            ul li a {
+                text-decoration: none;
+                display : inline-block;
+                background-color: rgb(34, 52, 69);
+                box-shadow: 0px 0px 5px rgb(0, 0, 0);
+                width :100px;
+                text-align: center;
+                padding : 10px 10px;
+                border-radius: 5px;
+                color :rgb(211, 228, 245);
+            }
+
+            ul li {
+                list-style: none;
+            }
+
+            ul li a:hover {
+                text-decoration: underline;
+                background-color : rgb(74, 105, 134);
+            }
+
+            ul {
+                display : flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin : 30px;
+                gap : 20px;
+            }
+
+            hr {
+                background-color: black;
+                border:none;
+                height:2px;
+                width :100%;
+            }
+
+            footer {
+                width: 100%;
+                background-color: rgb(28, 33, 59);
+                color: rgb(211, 228, 245);
+                text-align: center;
+                padding: 10px 0;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body class="home">
+        <div class="container">
+            <img src="ssgmce.png" id="ssgmce">
+            <h1>Welcome to Shri Sant Gajanan Maharaj College of Engineering, Shegaon</h1>
+            <p><i>Explore the various facilities and offerings of our college</i></p>
+            <hr>
+            <ul>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+        <footer>
+            Sharvari Bhujade <br>
+            Roll No. 25
+        </footer>
+    </body>
+</html>
